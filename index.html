@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Adventure Game - IMR HAND</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="splash-screen active">
+        <div class="splash-content">
+            <div class="splash-logo">IMR HAND</div>
+            <div class="splash-particles"></div>
+            <p class="splash-text">Press SPACE or Click to Enter</p>
+        </div>
+    </div>
+
+    <!-- Game Container -->
+    <div id="gameContainer" class="game-container">
+        <!-- HUD Overlay -->
+        <div class="hud">
+            <div class="hud-top-left">
+                <div class="logo-small">IMR HAND</div>
+            </div>
+            <div class="hud-top-right">
+                <div class="fps-counter">FPS: <span id="fps">60</span></div>
+            </div>
+            <div class="hud-bottom-left">
+                <div class="health-panel">
+                    <span>❤️ Health:</span>
+                    <div class="health-bar">
+                        <div class="health-fill" id="healthFill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hud-bottom-right">
+                <div class="items-panel">
+                    <span>💎 Items:</span>
+                    <span id="itemCount">0</span>
+                </div>
+            </div>
+            <div class="hud-center-bottom controls-hint" id="controlsHint">
+                <p>WASD • SPACE Jump • E Interact • ESC Pause</p>
+            </div>
+        </div>
+
+        <!-- Pause Menu -->
+        <div id="pauseMenu" class="pause-menu">
+            <div class="pause-content">
+                <h1>PAUSED</h1>
+                <p>Press ESC to Resume</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
